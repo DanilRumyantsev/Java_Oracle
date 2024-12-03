@@ -71,6 +71,30 @@ public class Main {
 //        System.out.println("Число в степени = " + result);
 //        System.out.println("-------------------------------------");
         //#5
-        
+//        int a = 0;
+//        int b = -5;
+//        for (int i = 0; i < 10; i++) {
+//            int result = a + i * b;
+//            System.out.print(result + " ");
+//        }
+        //#6
+        String searchMe = "Мама мыла раму";
+        int max = searchMe.length();
+        char symb = 'ы';
+        int find = 0;
+
+        for (int i = 0; i < max; i++) {
+            if (searchMe.charAt(i) == symb) {
+                find++;
+                if (find >= 2) {
+                    System.out.println("Символ " + symb + " встречается 2 и более раза");
+                    break;
+                }
+
+            }
+        }
+        if (find < 2) {
+            System.out.println("Символ " + symb + " не встречается 2 и более раза");
+        }
     }
 }
